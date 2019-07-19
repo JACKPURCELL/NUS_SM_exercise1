@@ -1,0 +1,14 @@
+input.onButtonPressed(Button.A, function () {
+    a = Math.randomRange(0, 10000)
+    length = a.toString().length
+    last = a % 10
+    first = Math.floor(a / 10 ** (length - 1))
+    basic.showNumber(a)
+    basic.showNumber(first)
+    basic.showNumber(last)
+})
+let first = 0
+let last = 0
+let length = 0
+let a = 0
+basic.showIcon(IconNames.Yes)
